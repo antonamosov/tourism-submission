@@ -254,7 +254,6 @@
              * @param {string} country
              */
             onInput({ number, isValid, country }) {
-                console.log(country);
                 this.currentCountryIso = country.iso2 !== undefined ? country.iso2 : '';
                 if (number !== undefined && isValid !== undefined) {
                     if (! isValid) {
