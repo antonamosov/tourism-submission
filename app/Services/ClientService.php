@@ -50,6 +50,6 @@ class ClientService
     {
         $currentWeather =  $this->weather->getCurrentWeather($this->country->getCapital());
 
-        return $currentWeather->weather->description;
+        return $currentWeather->weather->description . ' : ' . $currentWeather->temperature->now;
     }
 }

@@ -71,9 +71,7 @@
                                                    @onInput="onInput"
                                                    @onValidate="onValidate(index)"
                                                    :preferredCountries="['us', 'gb', 'ru']"
-                                                   :disabledFetchingCountry="false"
-                                    >
-                                    </vue-tel-input>
+                                                   :disabledFetchingCountry="false" />
                                 </div>
                             </div>
                         </div>
@@ -141,7 +139,7 @@
                     this.showErrorMessage('Please wait while loading.');
                 }
                 if (this.emptyUserExists) {
-                    this.showErrorMessage('Please fill name and email.');
+                    this.showErrorMessage('Please fill name and phone.');
                     return;
                 }
                 this.clearMessages();
@@ -161,7 +159,7 @@
                     this.showErrorMessage('Please wait while loading.');
                 }
                 if (this.emptyUserExists) {
-                    this.showErrorMessage('Please fill name and email.');
+                    this.showErrorMessage('Please fill name and phone.');
                     return;
                 }
                 if (this.users.length === 0) {
